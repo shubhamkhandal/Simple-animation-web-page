@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food O Food</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        find now...
+    </div>
+    <header>
+        <nav>
+            <a href="#" class="navbar-brand">food o food</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <h2>the healthy</h2>
+            <h1>eating experience</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptates odit dicta eius, et quis!</p>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="city-box">
+            <form action="#">
+                    <input class="search-input" type="search" name="search-city" id="search-city" placeholder="Search Your Food" />
+
+                    <button class="search-btn" id="search-btn">search</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="left-col">
+                    <div class="food-img">
+                        <img src="./assets/four-macaroons-808941.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="about-food-col">
+                        <h2>Four Macaroons -</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sint aut eveniet neque perferendis saepe dolorum commodi laboriosam! Numquam maiores eaque eos cum accusantium consectetur corporis repudiandae vel, id consequuntur tenetur provident dicta, architecto excepturi rerum! Fuga repellat voluptas labore enim, expedita voluptates error tenetur quo velit, sequi quia optio. Cupiditate facilis dolore illum tempora voluptatibus. Quo harum tenetur tempora! Velit quasi natus laboriosam deserunt, molestias voluptas tempora quo in placeat reiciendis deleniti assumenda numquam impedit. Nihil officiis rerum maiores, repellendus, harum molestias laborum similique labore debitis commodi eaque. Ex non culpa a quibusdam consequatur, fugit dolores sit? Quaerat, quas!</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;copyright: All right reserved,2020</p>
+    </footer>
+
+
+    <script>
+        let btn= document.getElementById('search-btn');
+        let overlay= document.getElementById('overlay');
+
+        btn.addEventListener('click', ()=>{
+            overlay.style.display='grid',
+            overlay.classList.add('animate-overlay');
+        })
+      
+        
+        
+    </script>
+</body>
+</html>
